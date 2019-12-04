@@ -49,6 +49,9 @@ body {
   padding: 0;
 }
 
+
+/* Block header */
+
 .main-header {
   font-family: "Montserrat";
   font-weight: 700;
@@ -60,16 +63,20 @@ body {
   justify-content: space-between;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 30px 15px 0;
+  padding: 65px 15px 0;
+}
+
+.logo-link {
+  cursor: default;
 }
 
 .logo {
   font-size: 17px;
   font-weight: 700;
-  border: 4px solid #000;
+  border: 5px solid #000;
   text-transform: uppercase;
   margin: 0;
-  padding: 0 5px;
+  padding: 5px 10px;
 }
 
 .logo span {
@@ -113,22 +120,37 @@ body {
 }
 
 .header-buttom {
+  position: relative;
   max-width: 1140px;
   font-weight: 400;
   text-align: center;
   margin: 0 auto;
-  padding: 190px 15px;
+  padding: 195px 15px 210px;
+  line-height: 1.3;
+  letter-spacing: 2px;
+}
+
+.header-buttom::after {
+  position: absolute;
+  right: 105px;
+  bottom: 135px;
+  display: block;
+  width: 76px;
+  height: 88px;
+  content: "";
+  background-image: url("../img/header.png");
 }
 
 .header-text {
   font-size: 45px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0 0 145px;
+  margin: 0 0 153px;
 }
 
 .header-text span {
   background-color: #b2f2ee;
+  padding: 0 10px;
 }
 
 .header-btn {
@@ -138,8 +160,15 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   margin: 0;
-  padding: 15px 45px;
+  padding: 14px 45px;
   opacity: 0.75;
+}
+
+
+/* Main content */
+
+.conteiner {
+  padding: 120px 0 165px;
 }
 
 .conteiner:nth-child(2n-1) {
@@ -160,6 +189,7 @@ body {
   font-family: "Merriweather";
   font-weight: 400;
   font-size: 18px;
+  line-height: 2;
 }
 
 .wrapper {
@@ -168,55 +198,135 @@ body {
   flex-wrap: wrap;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 137px 15px 0;
 }
 
-.about-description {
-  max-width: 485px;
-  padding: 0 35px;
-}
 
-.about-title {
-  font-family: "Merriweather";
-  font-weight: 700;
-  font-size: 20px;
-  text-transform: uppercase;
-  margin: 0;
-}
+/* About us */
 
 .about-slider {
   position: relative;
+  padding: 0 80px;
 }
 
 .about-slider::before {
   position: absolute;
   top: 35px;
-  left: 20px;
+  left: 40px;
   display: block;
   content: "";
-  width: 485px;
+  width: 40px;
   height: 410px;
   background-color: #eff0f2;
+}
+
+.about-slider::after {
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  display: block;
+  content: "";
+  width: 40px;
+  height: 410px;
+  background-color: #eff0f2;
+}
+
+.about-img {
+  display: block;
+  width: 392px;
+  height: 483px;
+}
+
+.about-description {
+  max-width: 485px;
+  letter-spacing: 1px;
+  padding: 0 35px;
+  letter-spacing: 1px;
+}
+
+.about-title {
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.about-text {
+  line-height: 31px;
+  text-align: justify;
+}
+
+.about-block:first-child h3 {
+  font-size: 20px;
+}
+
+.about-block:first-child {
+  margin: 0 0 30px;
+}
+
+
+/* Work */
+
+.work {
+  padding-bottom: 110px;
+}
+
+.work .wrapper {
+  padding: 110px 15px 0;
 }
 
 .work-img {
   margin: 0 0 15px;
 }
 
+
+/* Service */
+
 .service-item {
   position: relative;
-  box-sizing: border-box;
+  display: block;
+  width: 474px;
+  height: 371px;
   color: #fff;
-  z-index: 1;
+  margin: 0 0 15px;
 }
 
 .service-item:nth-child(1) {
   position: relative;
-  max-width: 653px;
-  min-height: 419px;
+  width: 653px;
+  height: 419px;
   color: #000;
   background-color: #71f5ea;
-  padding: 55px 68px;
+}
+
+.service-btn {
+  position: absolute;
+  bottom: -55px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.service-btn::before,
+.service-btn::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 17px;
+  background-color: #000;
+}
+
+.service-btn::before {
+  transform: rotate(45deg);
+}
+
+.service-btn::after {
+  transform: rotate(-45deg);
 }
 
 .service-item:nth-child(2) {
@@ -257,9 +367,7 @@ body {
   width: 474px;
   height: 371px;
   content: "";
-  background-color: #000;
-  opacity: 0.5;
-  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .service-item:nth-child(2)::after {
@@ -272,46 +380,79 @@ body {
   height: 371px;
 }
 
+.service-item:nth-child(1) div {
+  top: 60px;
+  width: 450px;
+}
+
+.service-description {
+  position: absolute;
+  top: 185px;
+  left: 95px;
+  width: 320px;
+  z-index: 1;
+}
+
+.service-item:nth-child(3) div {
+  top: 164px;
+  width: 405px;
+}
+
+.service-item:nth-child(4) div {
+  top: 164px;
+  width: 320px;
+}
+
+.service-item:nth-child(5) div {
+  top: 130px;
+  width: 270px;
+}
+
+.service-item:nth-child(6) div {
+  top: 130px;
+  width: 400px;
+}
+
 .service-title {
   font-family: "Merriweather";
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
+  margin: 0 0 25px;
+  opacity: 0.95;
 }
 
-.service-text {}
-
-.service-btn {
-  position: absolute;
-  bottom: 55px;
-  left: 68px;
-  width: 15px;
-  height: 15px;
-  background: none;
-  border: none;
+.service-item:nth-child(1) h2 {
+  opacity: 0.83;
 }
 
-.service-btn:before,
-.service-btn:after {
-  position: absolute;
-  content: "";
-  height: 15px;
-  width: 2px;
-  background-color: #000;
+.service-text {
+  margin: 0 0 60px;
+  opacity: 0.75;
 }
 
-.service-btn:before {
-  transform: rotate(45deg);
-}
-
-.service-btn:after {
-  transform: rotate(-45deg);
+.service-item:nth-child(1) p {
+  opacity: 0.90;
 }
 
 .service-link {
+  position: relative;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.service-link::after {
+  position: absolute;
+  top: 0;
+  right: -60px;
+  display: block;
+  width: 22px;
+  height: 15px;
+  content: "";
+  background-image: url("../img/service-link.png");
+  opacity: 0.6;
 }
 
 .team-description {
@@ -350,8 +491,6 @@ body {
 
 .slider-nav {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -360,39 +499,36 @@ body {
   opacity: 0;
 }
 
-.slider-nav__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.slider-btn {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: absolute;
-  bottom: -55px;
-  left: 20px;
+  bottom: -50px;
+  left: 150px;
   z-index: 1000;
   width: 50px;
 }
 
-.slider-nav__btn label {
-  width: 6px;
-  height: 6px;
+.slider-btn label {
+  width: 10px;
+  height: 10px;
   margin: 0;
-  background-color: #ddd2c5;
+  background-color: #d0d0d0;
+  border-radius: 2px;
   cursor: pointer;
 }
 
-.slider-nav__btn label:hover {
-  background-color: #8b8784;
+.slider-btn label:hover {
+  background-color: #71f6eb;
 }
 
-.btn-1:checked~.slider-nav__btn label[for="slider-first"],
-.btn-2:checked~.slider-nav__btn label[for="slider-second"],
-.btn-3:checked~.slider-nav__btn label[for="slider-third"],
-.btn-4:checked~.slider-nav__btn label[for="slider-fourt"],
-.btn-5:checked~.slider-nav__btn label[for="slider-fifth"],
-.btn-6:checked~.slider-nav__btn label[for="slider-sixth"] {
-  background-color: #8b8784;
+.btn-1:checked~.slider-btn label[for="slider-first"],
+.btn-2:checked~.slider-btn label[for="slider-second"],
+.btn-3:checked~.slider-btn label[for="slider-third"],
+.btn-4:checked~.slider-btn label[for="slider-fourt"] {
+  background-color: #71f6eb;
 }
 
 
