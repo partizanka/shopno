@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon">
-  <link rel="stylesheet" href="assets/css/normalize.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="libs/owlcarousel/assets/owl.carousel.css">
+  <link rel="stylesheet" href="libs/owlcarousel/assets/owl.theme.default.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/bb257f94e7.js" crossorigin="anonymous"></script>
   <title>SHOPNO</title>
 </head>
@@ -32,9 +34,13 @@
       <h2 class="title">About us</h2>
       <p class="description">Lorem ipsum dolor sit amet event landing template</p>
       <section class="wrapper">
-        <div class="about-images">
-          <img class="about-img" src="assets/img/about.jpg" alt="About us">
-          <div class="about-nav">
+        <div class="about-item">
+          <div class="owl-carousel owl-theme" id="owl-about">
+            <img class="about-img" src="img/about.jpg" alt="About us">
+            <img class="about-img" src="img/about.jpg" alt="About us">
+            <img class="about-img" src="img/about.jpg" alt="About us">
+            <img class="about-img" src="img/about.jpg" alt="About us">
+            <!-- <div class="about-nav">
             <input class="about-nav-1" type="radio" name="about-btn" id="about-btn-1">
             <input class="about-nav-2" type="radio" name="about-btn" id="about-btn-2" checked>
             <input class="about-nav-3" type="radio" name="about-btn" id="about-btn-3">
@@ -45,6 +51,7 @@
               <label for="about-btn-3"></label>
               <label for="about-btn-4"></label>
             </div>
+          </div> -->
           </div>
         </div>
         <div class="about-description">
@@ -65,12 +72,12 @@
       <h2 class="title">Featured works</h2>
       <p class="description">Lorem ipsum dolor sit amet event landing template</p>
       <div class="wrapper">
-        <img class="work-img" src="assets/img/work1.jpg" alt="Work 1">
-        <img class="work-img" src="assets/img/work2.jpg" alt="Work 2">
-        <img class="work-img" src="assets/img/work3.jpg" alt="Work 3">
-        <img class="work-img" src="assets/img/work4.jpg" alt="Work 4">
-        <img class="work-img" src="assets/img/work5.jpg" alt="Work 5">
-        <img class="work-img" src="assets/img/work6.jpg" alt="Work 6">
+        <img class="work-img" src="img/work1.jpg" alt="Work 1">
+        <img class="work-img" src="img/work2.jpg" alt="Work 2">
+        <img class="work-img" src="img/work3.jpg" alt="Work 3">
+        <img class="work-img" src="img/work4.jpg" alt="Work 4">
+        <img class="work-img" src="img/work5.jpg" alt="Work 5">
+        <img class="work-img" src="img/work6.jpg" alt="Work 6">
       </div>
     </section>
     <section class="conteiner service" id="service">
@@ -78,7 +85,13 @@
       <p class="description">Lorem ipsum dolor sit amet event landing template</p>
       <div class="wrapper">
         <article class="service-item">
+          <img src="img/service0.jpg" alt="Service">
           <div class="service-description">
+            <h2 class="service-title">Designing is the Cool love for</h2>
+            <p class="service-text">Our most popular service is our we know that sometimes it’s something and you middle most...</p>
+            <a class="service-link" href="#">Know more</a>
+          </div>
+          <div class="service-information active">
             <h2 class="service-title">Designing is the Cool love for.</h2>
             <p class="service-text">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be
               one of the first candidates. You may even catch the client while they’re still online.</p>
@@ -86,38 +99,71 @@
           </div>
         </article>
         <article class="service-item">
+          <img src="img/service1.jpg" alt="Service">
           <div class="service-description">
             <h2 class="service-title">Cool psd Design</h2>
             <p class="service-text">Our most popular service is our we know that sometimes it’s something and you middle most...</p>
             <a class="service-link" href="#">Know more</a>
           </div>
+          <div class="service-information">
+            <h2 class="service-title">Cool psd Design.</h2>
+            <p class="service-text">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be
+              one of the first candidates. You may even catch the client while they’re still online.</p>
+            <button class="service-btn"></button>
+          </div>
         </article>
         <article class="service-item">
+          <img src="img/service2.jpg" alt="Service">
           <div class="service-description">
             <h2 class="service-title">Designing is The Cool</h2>
             <p class="service-text">Our most popular service is our Virtual Receptionist. We know that...</p>
             <a class="service-link" href="#">Know more</a>
           </div>
+          <div class="service-information">
+            <h2 class="service-title">Designing is The Cool.</h2>
+            <p class="service-text">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be
+              one of the first candidates. You may even catch the client while they’re still online.</p>
+            <button class="service-btn"></button>
+          </div>
         </article>
         <article class="service-item">
+          <img src="img/service3.jpg" alt="Service">
           <div class="service-description">
             <h2 class="service-title">PSD to HTML kori</h2>
             <p class="service-text">We know that sometimes it’s something and you middle most...</p>
             <a class="service-link" href="#">Know more</a>
           </div>
+          <div class="service-information">
+            <h2 class="service-title">PSD to HTML kori.</h2>
+            <p class="service-text">We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates.</p>
+            <button class="service-btn"></button>
+          </div>
         </article>
         <article class="service-item">
+          <img src="img/service4.jpg" alt="Service">
           <div class="service-description">
             <h2 class="service-title">Cool psd Design</h2>
             <p class="service-text">Our most popular service is our new virtual Receptionist you middle most...</p>
             <a class="service-link" href="#">Know more</a>
           </div>
+          <div class="service-information">
+            <h2 class="service-title">Cool psd Design.</h2>
+            <p class="service-text">We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates.</p>
+            <button class="service-btn"></button>
+          </div>
         </article>
         <article class="service-item">
+          <img src="img/service5.jpg" alt="Service">
           <div class="service-description">
             <h2 class="service-title">Designing is the Cool for</h2>
             <p class="service-text">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most...</p>
             <a class="service-link" href="#">Know more</a>
+          </div>
+          <div class="service-information">
+            <h2 class="service-title">Designing is the Cool for.</h2>
+            <p class="service-text">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be
+              one of the first candidates. You may even catch the client while they’re still online.</p>
+            <button class="service-btn"></button>
           </div>
         </article>
       </div>
@@ -129,7 +175,7 @@
       <div class="wrapper">
 
         <div class="team-item">
-          <img src="assets/img/team16.jpg" alt="Person 1">
+          <img src="img/team16.jpg" alt="Person 1">
           <div class="team-description">
             <b class="team-title">Al Rayhan <span>&#47; UI Designer</span></b>
             <p class="team-text">Lorem Ipsum is not simply is an action designer random text.<br>It has roots in a piece. </p>
@@ -151,7 +197,7 @@
         </div>
 
         <div class="team-item">
-          <img src="assets/img/team2.jpg" alt="Person 2">
+          <img src="img/team2.jpg" alt="Person 2">
           <div class="team-description">
             <b class="team-title">Al Rayhan <span>&#47; UI Designer</span></b>
             <p class="team-text">Lorem Ipsum is not simply is an action designer random text.<br>It has roots in a piece. </p>
@@ -173,7 +219,7 @@
         </div>
 
         <div class="team-item">
-          <img src="assets/img/team35.jpg" alt="Person 3">
+          <img src="img/team35.jpg" alt="Person 3">
           <div class="team-description">
             <b class="team-title">Al Rayhan <span>&#47; UI Designer</span></b>
             <p class="team-text">Lorem Ipsum is not simply is an action designer random text.<br>It has roots in a piece. </p>
@@ -195,7 +241,7 @@
         </div>
 
         <div class="team-item">
-          <img src="assets/img/team4.jpg" alt="Person 4">
+          <img src="img/team4.jpg" alt="Person 4">
           <div class="team-description">
             <b class="team-title">Al Rayhan <span>&#47; UI Designer</span></b>
             <p class="team-text">Lorem Ipsum is not simply is an action designer random text.<br>It has roots in a piece. </p>
@@ -217,7 +263,7 @@
         </div>
 
         <div class="team-item">
-          <img src="assets/img/team5.jpg" alt="Person 5">
+          <img src="img/team5.jpg" alt="Person 5">
           <div class="team-description">
             <b class="team-title">Al Rayhan <span>&#47; UI Designer</span></b>
             <p class="team-text">Lorem Ipsum is not simply is an action designer random text.<br>It has roots in a piece. </p>
@@ -239,7 +285,7 @@
         </div>
 
         <div class="team-item">
-          <img src="assets/img/team16.jpg" alt="Person 6">
+          <img src="img/team16.jpg" alt="Person 6">
           <div class="team-description">
             <b class="team-title">Al Rayhan <span>&#47; UI Designer</span></b>
             <p class="team-text">Lorem Ipsum is not simply is an action designer random text.<br>It has roots in a piece. </p>
@@ -270,37 +316,88 @@
       <p class="description">Lorem ipsum dolor sit amet event landing template</p>
 
       <div class="wrapper">
+        <div class="owl-carousel owl-theme wrapper-testimonial" id="owl-testimonial">
+          <div class="testimonial-item">
+            <div class="testimonial-images">
+              <img class="testimonial-img" src="img/testimonial.jpg" alt="Person">
+            </div>
+            <div class="testimonial-description">
+              <b class="testimonial-title">Al Rayhan <span>&#47; UI&#47;UX Designer</span></b>
+              <p class="testimonial-text">Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <ul class="star">
+                <li class="star-item"></li>
+                <li class="star-item"></li>
+                <li class="star-item"></li>
+                <li class="star-item"></li>
+                <li class="star-item"></li>
+              </ul>
+            </div>
+          </div>
 
-        <div class="testimonial-images">
-          <img class="testimonial-img" src="assets/img/testimonial.jpg" alt="Person">
-          <div class="testimonial-nav">
-            <input class="testimonial-nav-1" type="radio" name="testimonial-btn" id="testimonial-btn-1">
-            <input class="testimonial-nav-2" type="radio" name="testimonial-btn" id="testimonial-btn-2" checked>
-            <input class="testimonial-nav-3" type="radio" name="testimonial-btn" id="testimonial-btn-3">
-            <input class="testimonial-nav-4" type="radio" name="testimonial-btn" id="testimonial-btn-4">
-            <div class="testimonial-btn">
-              <label for="testimonial-btn-1"></label>
-              <label for="testimonial-btn-2"></label>
-              <label for="testimonial-btn-3"></label>
-              <label for="testimonial-btn-4"></label>
+          <div class="testimonial-item">
+            <div class="testimonial-images">
+              <img class="testimonial-img" src="img/testimonial.jpg" alt="Person">
+            </div>
+            <div class="testimonial-description">
+              <b class="testimonial-title">Al Rayhan <span>&#47; UI&#47;UX Designer</span></b>
+              <p class="testimonial-text">Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <ul class="star">
+                <li class="star-item"></li>
+                <li class="star-item"></li>
+                <li class="star-item"></li>
+                <li class="star-item"></li>
+                <li class="star-item"></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="testimonial-item">
+            <div class="testimonial-images">
+              <img class="testimonial-img" src="img/testimonial.jpg" alt="Person">
+            </div>
+            <div class="testimonial-description">
+              <b class="testimonial-title">Al Rayhan <span>&#47; UI&#47;UX Designer</span></b>
+              <p class="testimonial-text">Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <ul class="star">
+                <li class="star-item"></li>
+                <li class="star-item"></li>
+                <li class="star-item"></li>
+                <li class="star-item"></li>
+                <li class="star-item"></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="testimonial-item">
+            <div class="testimonial-images">
+              <img class="testimonial-img" src="img/testimonial.jpg" alt="Person">
+            </div>
+            <div class="testimonial-description">
+              <b class="testimonial-title">Al Rayhan <span>&#47; UI&#47;UX Designer</span></b>
+              <p class="testimonial-text">Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <ul class="star">
+                <li class="star-item"></li>
+                <li class="star-item"></li>
+                <li class="star-item"></li>
+                <li class="star-item"></li>
+                <li class="star-item"></li>
+              </ul>
             </div>
           </div>
         </div>
-
-        <div class="testimonial-description">
-
-          <b class="testimonial-title">Al Rayhan <span>&#47; UI&#47;UX Designer</span></b>
-          <p class="testimonial-text">Lorem Ipsum is simply dummy text of the printing and you standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <ul class="star">
-            <li class="star-item"></li>
-            <li class="star-item"></li>
-            <li class="star-item"></li>
-            <li class="star-item"></li>
-            <li class="star-item"></li>
-          </ul>
-          <div class="testimonial-slider">
-            <button class="slider-btn left"></button>
-            <button class="slider-btn right"></button>
+        <div class="testimonial-controls">
+          <!-- <div class="testimonial-nav">
+            <div class="control-item control-prev"></div>
+            <div class="control-item control-next"></div>
+          </div> -->
+          <div class="owl-nav">
+            <div class="owl-prev">prev</div>
+            <div class="owl-next">next</div>
+          </div>
+          <div class="owl-dots">
+            <div class="owl-dot btn active"><span></span></div>
+            <div class="owl-dot btn"><span></span></div>
+            <div class="owl-dot btn"><span></span></div>
           </div>
         </div>
       </div>
@@ -308,7 +405,7 @@
     </section>
   </main>
   <footer class="main-footer">
-    <img class="partners" src="assets/img/partners.png" width="1133" height="172" alt="Partners">
+    <img class="partners" src="img/partners.png" width="1133" height="172" alt="Partners">
     <section class="feedback" id="touch">
       <div class="feedback-wrapper">
 
@@ -326,7 +423,9 @@
           <p>Fax: <a class="feedback-item fax" href="fax:+456565446">&#43; 456456 54546</a></p>
           <p>Web: <a class="feedback-item web" href="http://designagency.net">www.designagency.net</a></p>
           <p>Email: <a class="feedback-item email" href="mailto:info@hexalcorp.com">info&#64;designagency.net</a></p>
-          <div class="map"></div>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38981.31150618449!2d4.863618457698206!3d52.36440032212229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2z0JDQvNGB0YLQtdGA0LTQsNC8LCDQndC40LTQtdGA0LvQsNC90LTRiw!5e0!3m2!1sru!2sby!4v1576859280659!5m2!1sru!2sby" width="455" height="224" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
         </address>
       </div>
     </section>
@@ -350,7 +449,9 @@
       <p class="copyright">Copyright Masum Parvej, All Rights Reserved</p>
     </section>
   </footer>
-
+  <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+  <script src="libs/owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/mine.js"></script>
 </body>
 
 </html>
