@@ -205,11 +205,11 @@ a {
 
 /* Main content */
 
-.conteiner {
+.container {
   padding: 120px 0 165px;
 }
 
-.conteiner:nth-child(2n-1) {
+.container:nth-child(2n-1) {
   background-color: #f8fafa;
 }
 
@@ -271,8 +271,8 @@ a {
   display: block;
   width: 392px;
   height: 483px;
-  -webkit-box-shadow: 1px 1px 19px -1px rgba(0, 0, 0, 0.45);
-  box-shadow: 1px 1px 19px -1px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.45);
+  box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.45);
   margin: 30px 0;
 }
 
@@ -454,8 +454,8 @@ a {
   height: 240px;
   background: #6ff5eb;
   padding: 40px;
-  -webkit-box-shadow: 1px 1px 19px -1px rgba(0, 0, 0, 0.45);
-  box-shadow: 1px 1px 19px -1px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.45);
+  box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.45);
 }
 
 .team-item:hover .team-description {
@@ -564,8 +564,8 @@ a {
   display: block;
   width: 319px;
   height: 410px;
-  -webkit-box-shadow: 1px 1px 19px -1px rgba(0, 0, 0, 0.45);
-  box-shadow: 1px 1px 19px -1px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.45);
+  box-shadow: 1px 1px 15px -1px rgba(0, 0, 0, 0.45);
 }
 
 .testimonial-description {
@@ -664,9 +664,26 @@ a {
 /* Footer */
 
 .partners {
-  display: block;
-  padding: 110px 0;
+  margin: 100px auto;
+  max-width: 1170px;
+}
+
+.top-partners {
+  max-width: 540px;
   margin: 0 auto;
+}
+
+.top-partners,
+.bottom-partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.partner-item {
+  margin: 45px;
 }
 
 .feedback {
@@ -826,7 +843,7 @@ a {
     padding: 45px 30px 0;
   }
   /* Main content */
-  .conteiner {
+  .container {
     padding: 100px 0 100px;
   }
   .wrapper {
@@ -891,8 +908,10 @@ a {
     left: 302px;
   }
   /* Footer  */
-  .partners {
-    display: none;
+  .top-partners,
+  .bottom-partners {
+    max-width: 768px;
+    flex-wrap: wrap;
   }
   .feedback {
     max-width: 100%;
@@ -902,13 +921,15 @@ a {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    max-width: 768px;
+    padding: 0 10px;
   }
   .feedback-form {
-    width: 620px;
+    width: 100%;
     margin: 0 auto 20px;
   }
   .feedback-description {
-    width: 620px;
+    width: 100%;
     padding: 35px;
     margin: 0 auto;
   }
@@ -939,11 +960,12 @@ a {
     padding: 60px 0 0;
   }
   .title {
-    font-size: 30px;
+    font-size: 28px;
+    padding: 15px;
   }
   .description {
     font-size: 16px;
-    padding: 10px;
+    padding: 15px;
   }
   /* About */
   .about-item {
@@ -955,55 +977,62 @@ a {
     display: none;
   }
   .about-img {
-    width: 280px;
+    width: 290px;
     left: 0;
     height: auto;
     margin: 30px auto;
   }
   .about-description {
-    max-width: 300px;
+    max-width: 290px;
   }
   .about-title {
     text-align: center;
   }
   /* Work  */
   .work-img {
-    min-width: 320px;
-    margin: 0;
+    width: 290px;
+    height: auto;
+    margin: 0 auto 10px;
   }
   /* Service  */
   .service-item {
-    width: 100%;
+    width: 290px;
     height: 500px;
+    margin: 0 auto 10px;
   }
   .service-description {
-    left: 25px;
-    width: 270px;
+    left: 20px;
+    width: 250px;
     text-align: justify;
   }
   .service-title {
-    font-size: 16px;
+    font-size: 18px;
   }
   .service-information {
-    padding: 30px;
+    padding: 20px;
     text-align: justify;
   }
   /* Team  */
   .team-item {
     max-width: 320px;
+    margin: 0 auto 10px;
   }
   .team-item img {
-    width: 320px;
+    max-width: 290px;
+    margin: 0 auto;
   }
   .team-description {
-    left: 20px;
-    width: 280px;
+    left: 15px;
+    width: 260px;
     height: 210px;
-    padding: 20px;
+    padding: 15px;
+  }
+  .team-text {
+    font-size: 15px;
   }
   /* Testimonial */
   .testimonial-images {
-    max-width: 280px;
+    max-width: 290px;
   }
   .testimonial-img {
     left: 0;
@@ -1013,11 +1042,14 @@ a {
     display: none;
   }
   .testimonial-description {
-    width: 100%;
-    padding: 60px 30px;
+    width: 290px;
+    padding: 30px;
   }
   .testimonial-title {
     font-size: 16px;
+  }
+  .testimonial-text {
+    font-size: 15px;
   }
   .wrapper-testimonial .owl-dots {
     top: 425px;
@@ -1027,6 +1059,15 @@ a {
     left: 90px;
   }
   /* Footer  */
+  .partners {
+    max-width: 290px;
+    margin: 30px auto;
+  }
+  .partner-item {
+    width: 70px;
+    height: auto;
+    margin: 10px 0;
+  }
   .feedback {
     width: 100%;
   }
